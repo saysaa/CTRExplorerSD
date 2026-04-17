@@ -1,0 +1,30 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="CTRExploreSD.App"
+             xmlns:local="using:CTRExploreSD"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+  
+<Application.Styles>
+    <FluentTheme />
+</Application.Styles>
+
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.ThemeDictionaries>
+            <ResourceDictionary x:Key="Light">
+                <SolidColorBrush x:Key="MyBackgroundColor">#F5F5F0</SolidColorBrush>
+                <SolidColorBrush x:Key="MyTextColor">#222222</SolidColorBrush>
+            </ResourceDictionary>
+            <ResourceDictionary x:Key="Dark">
+                <SolidColorBrush x:Key="MyBackgroundColor">#1F1F1F</SolidColorBrush>
+                <SolidColorBrush x:Key="MyTextColor">#F0F0F0</SolidColorBrush>
+            </ResourceDictionary>
+        </ResourceDictionary.ThemeDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+</Application>
